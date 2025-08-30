@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+          children: [ 
             GestureDetector(
               onTap: () {
                 

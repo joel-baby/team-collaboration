@@ -1,3 +1,4 @@
+import 'package:app/pages/second_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -24,7 +25,10 @@ class HomePage extends StatelessWidget {
             SizedBox(width: 10,),
             GestureDetector(
               onTap: () {
-                
+                Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const SecondPage()),
+            );
               },
               child: Container(
                 color: Colors.amber,

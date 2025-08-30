@@ -11,16 +11,26 @@ class HomePage extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
-              color: Colors.blue,
-              padding: EdgeInsets.all(10),
-              child: Text('First page'),
+            GestureDetector(
+              onTap: () {
+                
+              },
+              child: Container(
+                color: Colors.blue,
+                padding: EdgeInsets.all(10),
+                child: Text('First page'),
+              ),
             ),
             SizedBox(width: 10,),
-            Container(
-              color: Colors.amber,
-              padding: EdgeInsets.all(10),
-              child: Text('Second page'),
+            GestureDetector(
+              onTap: () {
+                
+              },
+              child: Container(
+                color: Colors.amber,
+                padding: EdgeInsets.all(10),
+                child: Text('Second page'),
+              ),
             )
           ],
         ),

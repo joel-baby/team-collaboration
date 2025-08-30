@@ -1,3 +1,4 @@
+import 'package:app/pages/first_page.dart';
 import 'package:app/pages/second_page.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,10 @@ class HomePage extends StatelessWidget {
           children: [ 
             GestureDetector(
               onTap: () {
-                
+                 Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const FirstPage()),
+            );
               },
               child: Container(
                 color: Colors.blue,
